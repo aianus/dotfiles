@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gp await-port 23000
+
 _exts=(
   ms-python.python
   kylepaulsen.stretchy-spaces
