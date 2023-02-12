@@ -14,6 +14,7 @@ _exts=(
   huizhou.githd
   ms-azuretools.vscode-docker
   hashicorp.terraform
+  github.copilot
 )
 for _ext in "${_exts[@]}"; do {
    code --install-extension "$_ext";
