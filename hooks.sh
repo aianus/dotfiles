@@ -2,6 +2,10 @@
 
 gp await-port 23000
 
+# Install AI shell helper
+/home/gitpod/.nvm/versions/node/v16.17.0/bin/npm install -g --registry=https://nexus.internaldns-snaptravel.com/repository/npm/ @builder.io/ai-shell
+ai config set OPENAI_KEY=$OPENAI_API_KEY
+
 # _exts=(
 #   ms-python.python
 #   kylepaulsen.stretchy-spaces
