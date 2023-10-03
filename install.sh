@@ -2,8 +2,8 @@
 
 if [ -n "$CODER" ]; then
   mv /home/coder/.gitconfig /home/coder/.gitconfig.bak
-  ln -s /home/coder/.config/coderv2/dotfiles/.gitconfig /home/gitpod/.gitconfig
-  ln -s /home/coder/.config/coderv2/dotfiles/.bash_aliases /home/gitpod/.bash_aliases
+  ln -s /home/coder/.config/coderv2/dotfiles/.gitconfig /home/coder/.gitconfig
+  ln -s /home/coder/.config/coderv2/dotfiles/.bash_aliases /home/coder/.bash_aliases
   cp /home/coder/.config/coderv2/dotfiles/hooks.sh /workspace/remote-dev/hooks.sh
 
   # Use Administrator super-powers
