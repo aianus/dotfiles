@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -n "$CODER" ]; then
-  mv /home/gitpod/.gitconfig /home/gitpod/.gitconfig.bak
+  mv /home/coder/.gitconfig /home/coder/.gitconfig.bak
   ln -s /home/coder/.config/coderv2/dotfiles/.gitconfig /home/gitpod/.gitconfig
   ln -s /home/coder/.config/coderv2/dotfiles/.bash_aliases /home/gitpod/.bash_aliases
   cp /home/coder/.config/coderv2/dotfiles/hooks.sh /workspace/remote-dev/hooks.sh
