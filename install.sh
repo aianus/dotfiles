@@ -9,7 +9,7 @@ if [ -n "$CODER" ]; then
   # Use Administrator super-powers
   awk '{gsub(/dev-temp-privileged/,"default")};1' /home/coder/.aws/config > /home/coder/.aws/config.tmp && mv /home/coder/.aws/config.tmp /home/coder/.aws/config
   awk '{gsub(/DeveloperAccess/,"AdministratorAccess")};1' /home/coder/.aws/config > /home/coder/.aws/config.tmp && mv /home/coder/.aws/config.tmp /home/coder/.aws/config
-elif [ -n "$GITPOD" ]; then
+elif [ -n "$GITPOD_REPO_PATH" ]; then
   mv /home/gitpod/.gitconfig /home/gitpod/.gitconfig.bak
   ln -s /home/gitpod/.dotfiles/.gitconfig /home/gitpod/.gitconfig
   ln -s /home/gitpod/.dotfiles/.bash_aliases /home/gitpod/.bash_aliases
