@@ -21,3 +21,7 @@ elif [ -n "$GITPOD_REPO_PATH" ]; then
 else
   echo "Not running in Coder or Gitpod"
 fi
+
+# Install AI shell helper
+npm install -g --registry=https://nexus.internaldns-snaptravel.com/repository/npm/ @builder.io/ai-shell
+ai config set OPENAI_KEY=$OPENAI_API_KEY
