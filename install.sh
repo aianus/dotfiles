@@ -23,5 +23,6 @@ else
 fi
 
 # Install AI shell helper
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 npm install -g --registry=https://nexus.internaldns-snaptravel.com/repository/npm/ @builder.io/ai-shell
 ai config set OPENAI_KEY=$OPENAI_API_KEY
